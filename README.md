@@ -1,7 +1,7 @@
 # Simple Message Exchange Service Using Sockets in Python
 
 ## Description
-This project encapsulate a server on which clients can request specific data (current time, current date, temperature). The communication between the client and the server is encrypted using a basic xor encryption.
+This project encapsulate a server on which clients can request specific data (current time, current date, temperature). The communication between the client and the server is encrypted using a basic XOR encryption.
 
 ```Note: when temperature is requested the server responds with a random number between -100 and 100.```
 
@@ -21,6 +21,13 @@ Both sides now share the same key (X) and they can communicate with it securely
 ## Installation
 ### Requirements
 - python and pip
+
+Download the projec:
+
+```sh
+git clone https://github.com/VladSteopoaie/simple-message-exchange-service.git
+cd simple-message-exchange-service
+```
 
 In the project's folder create a python virtual environment and activate it:
 
@@ -107,6 +114,6 @@ Meanwhile on the server you should see:
 ```
 
 ## Communication in Wireshark
-Here I have a little sample of the packets on Wireshark while one client is connecting to the server, makes one request, and then another client connects to the server
+Here I have a little sample of the packets on Wireshark while one client is connecting to the server, makes one request, and then another client connects to the server. The server is on a virtual machine with bridged adapter (192.168.1.177:5000) and the clients are on my host machine (192.168.1.228).
 
 ![commnunication in wireshark](./images/communication.png)

@@ -18,7 +18,7 @@ class ThreadPool:
 
     def start_thread(self):
         while self.stop_flag != True:
-            #     task_function, task_arguments = self.get_task()
+            # task_function, task_arguments = self.get_task()
             task_function, task_arguments = self.task_queue.get()
             # releasing the lock and executing the task
             task_function(task_arguments)
