@@ -107,4 +107,6 @@ Meanwhile on the server you should see:
 ```
 
 ## Communication in Wireshark
+Here I have a little sample of the packets on Wireshark while one client is connecting to the server, makes one request, and then another client connects to the server
+
 ![commnunication in wireshark](./images/communication.png)
